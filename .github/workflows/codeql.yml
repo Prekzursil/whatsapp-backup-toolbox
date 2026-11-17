@@ -28,7 +28,7 @@ jobs:
             build-mode: none
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v7
       # Vendored third-party decrypter kept verbatim upstream; scan first-party code only.
       - name: Remove vendored tree from analysis
         run: rm -rf decryption/dbs/WhatsAppCrypt14Crypt15Decrypter

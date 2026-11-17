@@ -1,0 +1,15 @@
+# Dependabot version updates — fleet security standard.
+# Weekly, every ecosystem present, zero ignored updates.
+# The vendored decrypter subtree is excluded from version updates: it is
+# upstream code kept verbatim (see decryption/dbs/.../README), and patching
+# it in place would silently fork the vendored tool.
+version: 2
+updates:
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
